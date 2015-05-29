@@ -1,0 +1,13 @@
+[Unit]
+Description=Pulse Audio LADSPA compressor limiter plugin
+ 
+[Service]
+Type=simple
+User=root
+PIDFile=/var/run/pulsecomp.pid
+EnvironmentFile=/etc/default/pulsecomp
+ExecStart=/usr/bin/load-ladspa
+ 
+[Install]
+WantedBy=multi-user.target
+
