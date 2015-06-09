@@ -1,3 +1,20 @@
+This fork is intended to further simplify the process of enabling a "blanket" dynamic
+range control effect on all system audio through a selected audio output.
+
+Currently I've targeted the Cinnamon desktop, so this may just work for Gnome desktop 
+as well (I will test this).
+
+Next steps I'd like to take are creating a GUI (or at least an interactive shell script)
+that enumerates sinks on teh system, and presents the user a list of sinks for which
+to configure the DRC.
+
+If I get really ambitious, I might try to integrate into the panel applet, so that a
+user could easily toggle DRC on/off... maybe on each audio sink...?
+
+Contributions welcome!
+
+ORGINAL README.md:
+
 load-ladspa
 ===========
 
