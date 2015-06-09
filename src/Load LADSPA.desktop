@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/load-ladspa
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[en_US]=Load LADSPA
+Comment[en_US]=Loads LADSPA compressor/limiter to Pulseaudio
+X-GNOME-Autostart-Delay=0

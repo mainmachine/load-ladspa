@@ -3,7 +3,10 @@
 # See http://askubuntu.com/questions/95716/automatically-adjust-the-volume-based-on-content
 
 # Find name of default sink with "pacmd list-sinks"
-DEFAULT_SINK=alsa_output.pci-0000_00_1b.0.analog-stereo
+# DEFAULT_SINK=alsa_output.pci-0000_00_1b.0.analog-stereo
+
+# Source DEFAULT_SINK from config file
+. /etc/default/pulsecomp
 
 # Find compressor plugin name in "ls /usr/lib/ladspa/" dysonCompressor, if not installed, install swh-plugins
 COMPRESSOR_PLUGIN=dyson_compress_1403
