@@ -16,7 +16,8 @@ load_ladspa_sinks () {
   pacmd load-module module-ladspa-sink sink_name=ladspa_sink master=$DEFAULT_SINK plugin=$COMPRESSOR_PLUGIN label=dysonCompress control=0,1,0.5,0.99
 
   # To avoid clipping of playback we may also combine this plugin with a limiter after compression. We may use the fast_lookahead_limiter for this with the master sink being now our just created lasdpa_sink from above
-  pacmd load-module module-ladspa-sink sink_name=ladspa_normalized master=ladspa_sink plugin=fast_lookahead_limiter_1913 label=fastLookaheadLimiter control=10,0,0.8
+  #pacmd load-module module-ladspa-sink sink_name=ladspa_normalized master=ladspa_sink plugin=fast_lookahead_limiter_1913 label=fastLookaheadLimiter control=10,0,0.8
+  pacmd load-module module-ladspa-sink sink_name=ladspa_normalized master=ladspa_sink plugin=fast_lookahead_limiter_1913 label=fastLookaheadLimiter control=5,0,0.8
 }
 
 unload_named_sink () {
